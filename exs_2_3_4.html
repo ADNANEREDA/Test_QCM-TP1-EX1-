@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP JavaScript - Exercices 2, 3, 4</title>
+    <link rel="stylesheet" href="ex.css">
+</head>
+<body>
+
+<div class="container">
+
+    <section class="exercice">
+        <h2>Exercice 2 : Validation Email</h2>
+        <input type="text" id="emailInput" placeholder="Entrez votre email">
+        <button onclick="validerEmail()">Vérifier</button>
+        <p id="resultatEmail"></p>
+    </section>
+
+    <hr>
+
+    <section class="exercice">
+        <h2>Exercice 3 : Trier une liste</h2>
+        <p>Liste : [45, 2, 89, 12, 7]</p>
+        <button onclick="afficherTri()">Trier la liste</button>
+        <p id="resultatTri"></p>
+    </section>
+
+    <hr>
+
+    <section class="exercice">
+        <h2>Exercice 4 : Somme de trois mesures de temps</h2>
+
+        <div class="temps-input">
+            <p><strong>Premier temps :</strong></p>
+            Heure(s) <input type="number" id="h1" value="0">
+            Minute(s) <input type="number" id="m1" value="0">
+            Seconde(s) <input type="number" id="s1" value="0">
+        </div>
+
+        <div class="temps-input">
+            <p><strong>Deuxième temps :</strong></p>
+            Heure(s) <input type="number" id="h2" value="0">
+            Minute(s) <input type="number" id="m2" value="0">
+            Seconde(s) <input type="number" id="s2" value="0">
+        </div>
+
+        <div class="temps-input">
+            <p><strong>Troisième temps :</strong></p>
+            Heure(s) <input type="number" id="h3" value="0">
+            Minute(s) <input type="number" id="m3" value="0">
+            Seconde(s) <input type="number" id="s3" value="0">
+        </div>
+
+        <div class="buttons">
+            <button onclick="calculerSommeTemps()">Somme</button>
+            <button onclick="effacerChamps()">Effacer</button>
+        </div>
+
+        <div class="resultat-final">
+            <p><strong>Total des trois temps :</strong></p>
+            Jour(s) <input type="text" id="resJ" readonly>
+            Heure(s) <input type="text" id="resH" readonly>
+            Minute(s) <input type="text" id="resM" readonly>
+            Seconde(s) <input type="text" id="resS" readonly>
+        </div>
+    </section>
+
+</div>
+
+<script src="ex.js"></script>
+</body>
+</html>
